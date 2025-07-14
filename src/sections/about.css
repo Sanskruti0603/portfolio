@@ -1,0 +1,14 @@
+/* about.css */
+
+.scrollable::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollable::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+  background-color: #0ea5e9; /* sky-500 */
+  border-radius: 4px;
+}
