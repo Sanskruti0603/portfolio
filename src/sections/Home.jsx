@@ -8,7 +8,7 @@ export default function Home() {
     >
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
         <motion.div
-          className="text-center md:text-left md:w-1/2"
+          className="text-center md:text-left md:w-1/2 sm:mt-12"
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
@@ -29,33 +29,34 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center md:justify-start">
             <a
               href="#projects"
-              className="bg-sky-600 text-white px-6 py-3 rounded-lg font-medium shadow hover:bg-sky-700 transition"
+              className="bg-sky-600 text-white px-6 py-3 rounded-lg font-medium shadow hover:bg-sky-700 transition sm:w-fit w-full"
             >
               View Projects
             </a>
             <a
               href="#contact"
-              className="border-2 border-sky-600 text-sky-600 px-6 py-3 rounded-lg font-medium hover:bg-sky-50 transition"
+              className="border-2 border-sky-600 text-sky-600 px-6 py-3 rounded-lg font-medium hover:bg-sky-50 transition sm:w-fit w-full"
             >
               Contact Me
             </a>
             <a
               href="/resume.pdf"
               download
-              className="bg-white text-sky-600 border border-sky-600 px-6 py-3 rounded-lg font-medium shadow hover:bg-sky-100 transition"
+              className="bg-white text-sky-600 border border-sky-600 px-6 py-3 rounded-lg font-medium shadow hover:bg-sky-100 transition sm:w-fit w-full"
             >
               Download Resume
             </a>
           </div>
         </motion.div>
 
+        {/* Image Section */}
         <motion.div
-          className="md:w-1/2 w-full flex justify-center"
+          className="md:w-1/2 w-full flex justify-center mb-10 md:mb-0"
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
         >
-          <div className="relative w-72 h-96 md:w-96 md:h-[28rem] rounded-xl border border-white/20 backdrop-blur-md bg-white/10 shadow-xl overflow-hidden cursor-pointer  duration-300 hover:scale-110">
+          <div className="relative w-72 h-96 md:w-96 md:h-[28rem] rounded-xl border border-white/20 backdrop-blur-md bg-white/10 shadow-xl overflow-hidden cursor-pointer duration-300 hover:scale-110">
             <img
               src="me.jpeg"
               alt="Sanskruti"

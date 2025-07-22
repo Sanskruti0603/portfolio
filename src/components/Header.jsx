@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Link } from "react-router-dom";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,9 +16,18 @@ const Header = () => {
   return (
     <header className="bg-gradient-to-r from-black via-gray-900 to-gray-800 text-white shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
-        <h1 className="text-2xl font-extrabold tracking-wide">
-          <a href="#home">Sanskruti</a>
-        </h1>
+        <a
+          href="#home"
+          className="flex flex-col items-center text-center leading-none"
+          style={{ lineHeight: "1.1" }}
+        >
+          <span className="text-4xl sm:text-5xl font-[Satisfy] italic text-cyan-300 leading-none">
+            Sanskruti
+          </span>
+          <span className="text-xs sm:text-sm text-white font-light tracking-wide -mt-1">
+            - MERN Dev
+          </span>
+        </a>
 
         <nav className="hidden md:flex gap-6 font-medium">
           {links.map((link) => (
