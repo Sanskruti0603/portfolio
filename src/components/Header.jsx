@@ -14,7 +14,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="bg-gradient-to-r from-black via-gray-900 to-gray-800 text-white shadow-lg sticky top-0 z-50">
+    <header className="bg-gradient-to-r from-black via-gray-900 to-gray-800 text-white shadow-lg  top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
         <a
           href="#home"
