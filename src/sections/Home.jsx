@@ -26,7 +26,7 @@ export default function Home() {
             functionality.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center md:justify-start">
             <a
               href="#projects"
               className="bg-sky-600 text-white px-6 py-3 rounded-lg font-medium shadow hover:bg-sky-700 transition"
@@ -38,6 +38,13 @@ export default function Home() {
               className="border-2 border-sky-600 text-sky-600 px-6 py-3 rounded-lg font-medium hover:bg-sky-50 transition"
             >
               Contact Me
+            </a>
+            <a
+              href="/resume.pdf"
+              download
+              className="bg-white text-sky-600 border border-sky-600 px-6 py-3 rounded-lg font-medium shadow hover:bg-sky-100 transition"
+            >
+              Download Resume
             </a>
           </div>
         </motion.div>
